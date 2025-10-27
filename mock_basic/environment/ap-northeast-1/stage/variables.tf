@@ -1,0 +1,10 @@
+variable "env" {
+  type = string
+}
+variable "region" {
+  type = string
+}
+variable "project_name" {
+  type    = string
+  default = "mock_basic"
+}
