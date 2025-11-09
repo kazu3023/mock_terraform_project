@@ -5,8 +5,8 @@ terraform {
       version = "~> 6.0"
     }
   }
-
   backend "s3" {
-    key = "mock_basic/ap-northeast-1/stage"
+    # ${Region}/${Environment}/${Resource}/terraform.tfstate
+    key = "ap-northeast-1/stage/security-groups/terraform.tfstate"
   }
 }

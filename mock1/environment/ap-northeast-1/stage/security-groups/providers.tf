@@ -3,8 +3,8 @@ provider "aws" {
 
   default_tags {
     tags = {
-      Env       = "global"
-      ManagedBy = "terraform"
+      "Environment" = "stage"
+      "ManagedBy"   = "terraform"
     }
   }
 }
